@@ -62,6 +62,8 @@ fn gen_bindings() {
 }
 
 fn main() {
+    println!("cargo:rerun-if-changed=build.rs");
+
     gen_bindings();
 
     let mut cfg = cc::Build::new();
