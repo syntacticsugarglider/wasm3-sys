@@ -90,5 +90,8 @@ fn main() {
         };
     }
     cfg.define("d_m3Use32BitSlots", Some("0"));
+    if let Ok(compiler) = std::env::var("XTENSA_CC") {
+        cfg.compiler(&compiler);
+    }
     cfg.compile("wasm3");
 }
