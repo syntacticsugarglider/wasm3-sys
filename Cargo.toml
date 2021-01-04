@@ -1,0 +1,13 @@
+[package]
+name = "wasm3-sys"
+version = "0.1.0"
+authors = ["Izzy Swart <zenerboson@gmail.com>"]
+edition = "2018"
+
+[build-dependencies]
+cc = "1"
+bindgen = "0.56.0"
+shlex = "0.1.1"
+
+[dependencies]
+cty = "0.2.1"
